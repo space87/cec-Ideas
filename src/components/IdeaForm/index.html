@@ -1,0 +1,28 @@
+<div class="ideaContentArea">
+
+            <form id="ideaNote">
+                <div class='form-row'>
+                    <div class="form-group">
+                        <label for="personName" class='control-label'>Your name</label>
+                        <input type="text" v-model="idea.name" class="form-control" id="ideaName" required>
+                    </div>
+                </div>
+                <div class='form-row'>
+                    <div class="form-group">
+                        <label for="ideaText" class='control-label'>Your idea</label>
+                        <textarea v-model="idea.text" id="ideaText" class="form-control" rows="4" required></textarea>
+                    </div>
+                </div>
+                <div class='form-row'>
+                    <div class="form-group">
+                        <label for="deptment" class='control-label'>Your team <span class="smallText">(Your deptarment)</span></label>
+                        <input type="text" class="form-control" v-model="idea.dept" id="ideaDept" required>
+                    </div>
+                </div>
+            
+                    <button type="submit" class="btn btn-block btn-success" :disabled="idea.text < 10 || idea.name < 3 || idea.dept < 1 ? true : false" v-on:click.prevent="submitIdea">Put your idea in the bottle</button>
+            
+                </form>
+
+    
+</div>

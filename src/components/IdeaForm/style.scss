@@ -1,0 +1,40 @@
+.ideaContentArea {
+    padding:15px;
+    background:darken(#59D2FB,30%);
+    margin:0 20px;
+    border-radius: 6px;
+
+    form {
+        margin:0 auto;
+
+        .form-group {
+            label {
+                float: left;
+                color:#fff;
+
+                .smallText {
+                    font-size:9px;
+                    font-style: italic;
+                }
+            }
+
+            input {
+                box-shadow: none;
+            }
+        }
+
+
+        button {
+            display:inline-block;
+            background:#f17d31;
+            border-color:#f17d31;
+            font-weight: bold;
+            font-size: 16px;
+            font-family: 'arial';
+
+            &:hover {
+                background:darken(#f17d31,3%);
+            }
+        }
+    }
+}
