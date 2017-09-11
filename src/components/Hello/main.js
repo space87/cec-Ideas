@@ -16,8 +16,26 @@ export default {
     },
     methods: {
       ideaTotal: function(data) {
-        this.ideas.push(data);
-        this.total++;
+
+        this.updateTotal(this.ideas);
+        
+      },
+      updateTotal: function() {
+        const url = 'http://stormy-chamber-35830.herokuapp.com/ideas';
+
+       let self = this;
+
+        fetch(url)
+        .then(function(data) {
+            return data.json();
+        })
+        .then(function(res) {
+          self.ideas = res;
+          self.total = res.length;
+        })
       }
+    },
+    beforeMount() {
+      this.updateTotal(this.ideas);
     }
   }

@@ -22,6 +22,11 @@ h1, h2 {
       display:inline-block;
   }
 
+  .infoPanel {
+      background: #fff;
+      padding:15px;
+  }
+
   .leftBar {
       display: flex;
       justify-content: center;
@@ -66,5 +71,24 @@ h1, h2 {
         line-height: 86px;
         font-weight: bold;
         color:#fff;
+    }
+  }
+
+
+  .totalBox {
+    background:#f17d31;
+    padding:5px;
+    font-size:64px;
+    color:#fff;
+    margin-top:20px;
+
+    h3 {
+        margin:5px 0 0 0;
+        
+    }
+
+    p {
+        font-family: 'Gloria Hallelujah', cursive;
+        margin-bottom:0;
     }
   }

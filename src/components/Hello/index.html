@@ -1,35 +1,32 @@
+
+
 <div class="row">
-    <div class="col-sm-12 col-md-4">
-      <section class="leftBar">
-          <img src="../../assets/logo.png" class="mainLogo">
-          <h1>{{ msg }}</h1>
-          <p>Have any ideas that you think that would be great for cec or some thing new that you think would be awesome or crazy</p>
-          
-          <div class="ideasTotal">
+
+    <div class="col-xs-12 col-sm-3">
+
+        <div class="infoPanel">
+
+            <p>Have any ideas that you think that would be great for cec or some thing new that you think would be awesome or crazy</p>
+            <p>If you have any issues with submitting a idea or any ideas for improvement just email me <a href="mailto:jason.staerck@moneysavingexpert.com">here</a>
+
+            <div class="totalBox">
                 <h3>Total Ideas</h3>
                 <p class="ideaCount">{{total}}</p>
+            </div>
+
+
         </div>
 
-      </section>
-     
-    </div>
-    <div class="col-sm-12 col-md-8">
-        <IdeaForm @ideaAdded="ideaTotal"></IdeaForm>
 
-       <div class="latestIdea">
-            <ul>
-                    <li v-for="item in ideas">
-                        {{item.name}}
-                        {{item.text}}
-                        {{item.dept}}
-                    </li>
-                </ul>
-                <Bottle></Bottle>
-       </div>
-                
-               
-
-       
     </div>
-    
+
+    <div class="col-xs-12 col-sm-9">
+
+        <div class="mainPanel">
+            <IdeaForm @ideaAdded="ideaTotal"></IdeaForm>
+        </div>
+
+    </div>
+
+
 </div>

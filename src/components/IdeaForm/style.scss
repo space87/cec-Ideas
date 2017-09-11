@@ -1,8 +1,6 @@
 .ideaContentArea {
     padding:15px;
-    background:darken(#59D2FB,30%);
-    margin:0 20px;
-    border-radius: 6px;
+    background:#A2C7D4;
 
     form {
         margin:0 auto;
@@ -20,6 +18,8 @@
 
             input {
                 box-shadow: none;
+                border-radius: 0;
+                box-shadow: 0;
             }
         }
 
