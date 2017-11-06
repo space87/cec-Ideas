@@ -4,6 +4,10 @@
   "description": "a simple idea gathering app",
   "author": "jason staerck <jason.staerck@moneysavingexpert.com>",
   "private": true,
+  "engines": {
+    "node":"8.7.0",
+    "npm":"4.6.1"
+  },
   "scripts": {
     "dev": "node build/dev-server.js",
     "build": "node build/build.js",
