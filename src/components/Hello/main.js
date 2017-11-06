@@ -23,7 +23,7 @@ export default {
         
       },
       updateTotal: function() {
-        const url = 'https://stormy-chamber-35830.herokuapp.com/ideas';
+        const url = 'https://cec-ideas-api.herokuapp.com/ideas';
 
        let self = this;
 
