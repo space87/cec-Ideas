@@ -1,11 +1,13 @@
 import Bottle from '@/components/Bottle';
 import IdeaForm from '@/components/IdeaForm';
+import IdeaList from '@/components/IdeaList';
 
 export default {
     name: 'hello',
     components: {
       Bottle,
-      IdeaForm
+      IdeaForm,
+      IdeaList
     },
     data () {
       return {

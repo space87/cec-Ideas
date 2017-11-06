@@ -42,7 +42,7 @@ export default {
 }
 
 body {
-  background:#e3faff;
+  background:#f2f8f9;
 }
 
 .top_bar {
