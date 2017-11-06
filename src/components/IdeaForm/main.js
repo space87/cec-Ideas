@@ -16,7 +16,7 @@ export default {
       submitIdea() {
 
 
-        const url = 'https://stormy-chamber-35830.herokuapp.com/ideas';
+        const url = 'https://cec-ideas-api.herokuapp.com/ideas';
 
         var data = {
           name: this.idea.name,
