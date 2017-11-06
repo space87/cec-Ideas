@@ -12,7 +12,6 @@ export default {
     data () {
       return {
         msg: 'CEC Idea Bin',
-        total:0,
         ideas:[]
       }
     },
@@ -33,11 +32,17 @@ export default {
         })
         .then(function(res) {
           self.ideas = res;
-          self.total = res.length;
         })
       }
     },
     beforeMount() {
       this.updateTotal(this.ideas);
+      
+    },
+    mounted() {
+      this.$on('ideaAdded', function (selected) {
+        console.log('i added a idea')
+        this.updateTotal(this.ideas);
+      });
     }
   }

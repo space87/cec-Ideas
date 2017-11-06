@@ -7,8 +7,7 @@ export default {
       return {
         idea: {
             name:'',
-            text:'',
-            dept:''
+            text:''
         }
       }
     },
@@ -20,8 +19,7 @@ export default {
 
         var data = {
           name: this.idea.name,
-          text: this.idea.text,
-          dept: this.idea.dept
+          text: this.idea.text
         }
 
     
@@ -37,14 +35,13 @@ export default {
         }   
 
         fetch(url, fetchData)
-        .then(function(data) {
-
-          console.log('testing', data)
-            // Handle response you get from the server
+        .then((data) => {
+           if(data.status == 200) {
+            this.$parent.$emit('ideaAdded', this.idea);
+            this.idea = {name:'',text:''}
+           }
         });
-
-        this.$emit('ideaAdded', this.idea);
-        this.idea = {name:'',text:'',dept:''}
+        
       }
     }
   }

@@ -1,28 +1,20 @@
-<div class="ideaContentArea">
+<div class="ideaContentArea" id="submitIdea">
 
             <form id="ideaNote">
-                <div class='form-row'>
+                <div class="form-row">
                     <div class="form-group">
-                        <label for="personName" class='control-label'>Your name</label>
-                        <input type="text" v-model="idea.name" class="form-control" id="ideaName" required>
-                    </div>
+                        <input type="text" v-model="idea.name" class="form-control" id="ideaName" placeholder="your name" required>
+                    </div>  
                 </div>
-                <div class='form-row'>
+                <div class="form-row">
                     <div class="form-group">
-                        <label for="ideaText" class='control-label'>Your idea</label>
-                        <textarea v-model="idea.text" id="ideaText" class="form-control" rows="4" required></textarea>
-                    </div>
+                        <textarea v-model="idea.text" id="ideaText" placeholder="Your idea" class="form-control" rows="4" required></textarea>
+                    </div>  
                 </div>
-                <div class='form-row'>
-                    <div class="form-group">
-                        <label for="deptment" class='control-label'>Your team <span class="smallText">(Your deptarment)</span></label>
-                        <input type="text" class="form-control" v-model="idea.dept" id="ideaDept" required>
-                    </div>
-                </div>
-            
-                    <button type="submit" class="btn btn-block btn-success" :disabled="idea.text < 10 || idea.name < 3 || idea.dept < 1 ? true : false" v-on:click.prevent="submitIdea">Put your idea in the bottle</button>
-            
-                </form>
+
+                <button type="submit" class="btn btn-block btn-success" :disabled="idea.text < 10 || idea.name < 3 ? true : false" v-on:click.prevent="submitIdea">Put your idea in the bottle</button>
+                
+            </form>
 
     
 </div>

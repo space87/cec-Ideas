@@ -1,9 +1,10 @@
 .ideaContentArea {
-    padding:15px;
-    background:#A2C7D4;
+   
+    // background:#A2C7D4;
 
     form {
         margin:0 auto;
+       
 
         .form-group {
             label {
@@ -20,6 +21,15 @@
                 box-shadow: none;
                 border-radius: 0;
                 box-shadow: 0;
+                box-shadow: inset 0px 3px 104px -66px rgba(140,140,140,1);
+                border-color:#ccc;
+                background:#fff;
+            }
+
+            textArea {
+                box-shadow: inset 0px 3px 104px -66px rgba(140,140,140,1);
+                border-color:#ccc;
+                background:#fff;
             }
         }
 
@@ -31,10 +41,21 @@
             font-weight: bold;
             font-size: 16px;
             font-family: 'arial';
+            width:auto;
+            cursor: pointer;
+            margin-top:20px;
+            padding:20px;
 
             &:hover {
                 background:darken(#f17d31,3%);
             }
         }
     }
+}
+
+@media(min-width:600px) {
+    .ideaContentArea {
+        padding:15px 150px;
+    }
+    
 }

@@ -6,9 +6,7 @@
 
         <div class="row content_bar">
 
-          <img src="./assets/logo.png" class="top_logo">
-
-          <h1>Idea Bin</h1>
+          <h1>CEC Hack Bin</h1>
 
         </div>
 
@@ -36,7 +34,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 0px;
   padding:20px 20px;
   border-radius:3px;
 }
@@ -46,17 +44,20 @@ body {
 }
 
 .top_bar {
-  background:#3c93ae;
+  /* background:#3c93ae; */
+  
   height:80px;
   width:100%;
   position:relative;
 }
 
 .top_bar h1 {
-  font-family: 'Gloria Hallelujah', cursive;
+  font-family: 'arial';
   margin-left:10px;
-  color:#fff;
+  font-weight: 'bold';
+  color:rgb(131, 131, 131);
   font-weight:'normal';
+  font-size:50px;
 }
 
 .content_bar {
