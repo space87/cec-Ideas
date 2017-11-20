@@ -13,6 +13,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 Vue.config.productionTip = false;
 
+console.log('hi there')
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
